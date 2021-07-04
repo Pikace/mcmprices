@@ -28,6 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run mcmprices script
         #run: sudo ./data/MCMprices.sh
-        run: sudo ./data/test.sh
+        run: ./data/test.sh
 
 
