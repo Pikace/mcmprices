@@ -5,10 +5,9 @@ start_time=`date +%s`
 
 #content=$(curl -L https://www.cardmarket.com/fr/Magic/Products/Singles/Modern-Horizons/Prismatic-Vista)
 NOW=$(date +"%m-%d-%Y")
-echo $NOW
+#echo $NOW
 
 htmlLinename=$NOW"-MCMprices.txt"
-touch $htmlLinename
 #Parcours le fichier MCMsearchCards et lance un curl par entrée
 while IFS= read -r urlMCM; do
     isFound=false
@@ -30,7 +29,7 @@ while IFS= read -r urlMCM; do
             searchPrice="col-xl-7\"><span>"
             if [[ $htmlLine == *"span>"* ]]
             then
-	      echo $urlMCM ":" ${htmlLine#"$searchPrice"}
+	      #echo $urlMCM ":" ${htmlLine#"$searchPrice"}
               price=${htmlLine#"$searchPrice"}
 	      #echo $price >> ./data/$htmlLinename
               stringPrices="${stringPrices}${price}\n"
@@ -39,6 +38,6 @@ while IFS= read -r urlMCM; do
             fi
         fi
     done 
-done < ./data/MCMsearchCards2.txt
+done < ./data/MCMsearchCards.txt
 echo -e "${stringPrices}" 
 echo "-----END-----" && echo run time is $(expr `date +%s` - $start_time) s
