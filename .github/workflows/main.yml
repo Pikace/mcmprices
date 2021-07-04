@@ -27,6 +27,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run mcmprices script
-        run: echo Hello, world!
+        run: ./mcmprices.sh
 
 
