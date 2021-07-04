@@ -8,7 +8,7 @@ NOW=$(date +"%m-%d-%Y")
 echo $NOW
 
 htmlLinename=$NOW"-MCMprices.txt"
-
+touch $htmlLinename
 #Parcours le fichier MCMsearchCards et lance un curl par entrée
 while IFS= read -r urlMCM; do
     isFound=false
@@ -31,12 +31,12 @@ while IFS= read -r urlMCM; do
             if [[ $htmlLine == *"span>"* ]]
             then
 			  echo $urlMCM ":" ${htmlLine#"$searchPrice"}
-              echo ${htmlLine#"$searchPrice"} >> $htmlLinename
+              echo ${htmlLine#"$searchPrice"} >> ./data/$htmlLinename
               isFound=false
-			  break
+	      break
             fi
         fi
     done 
 done < ./data/MCMsearchCards2.txt
-git add ./data/MCMsearchCards2.txt
+
 echo "-----END-----" && echo run time is $(expr `date +%s` - $start_time) s
