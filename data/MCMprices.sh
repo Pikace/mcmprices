@@ -30,13 +30,15 @@ while IFS= read -r urlMCM; do
             searchPrice="col-xl-7\"><span>"
             if [[ $htmlLine == *"span>"* ]]
             then
-			  echo $urlMCM ":" ${htmlLine#"$searchPrice"}
-              echo ${htmlLine#"$searchPrice"} >> ./data/$htmlLinename
+	      echo $urlMCM ":" ${htmlLine#"$searchPrice"}
+              price=${htmlLine#"$searchPrice"}
+	      #echo $price >> ./data/$htmlLinename
+              stringPrices="${stringPrices}${price}\n"
               isFound=false
 	      break
             fi
         fi
     done 
 done < ./data/MCMsearchCards2.txt
-
+echo -e "${stringPrices}" 
 echo "-----END-----" && echo run time is $(expr `date +%s` - $start_time) s
