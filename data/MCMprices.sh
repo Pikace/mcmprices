@@ -37,9 +37,5 @@ while IFS= read -r urlMCM; do
             fi
         fi
     done 
-done < MCMsearchCards.txt
-<<<<<<< HEAD
+done < /data/MCMsearchCards.txt
 echo "-----END-----" && echo run time is $(expr `date +%s` - $start_time) s
-=======
-echo "-----END-----" && echo run time is $(expr `date +%s` - $start_time) s
->>>>>>> dbbb6458792f81df01fdeb0362ab20ae5a37ba71
