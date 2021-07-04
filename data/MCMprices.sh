@@ -12,7 +12,7 @@ htmlLinename=$NOW"-MCMprices.txt"
 while IFS= read -r urlMCM; do
     isFound=false
     urlMCM=${urlMCM%$'\r'}
-    content=$(curl -L $urlMCM)
+    content=$(curl -L -s $urlMCM)
 	
 	#Parcours le fichier HTML à la recherche de Tendance des prix
     for htmlLine in $content; do
