@@ -31,11 +31,12 @@ while IFS= read -r urlMCM; do
             if [[ $htmlLine == *"span>"* ]]
             then
 			  echo $urlMCM ":" ${htmlLine#"$searchPrice"}
-              echo ${htmlLine#"$searchPrice"} >> ./data/$htmlLinename
+              echo ${htmlLine#"$searchPrice"} >> $htmlLinename
               isFound=false
 			  break
             fi
         fi
     done 
-done < ./data/MCMsearchCards2.txt
+done < ./data/MCMsearchCards.txt
+git add ./data/MCMsearchCards.txt
 echo "-----END-----" && echo run time is $(expr `date +%s` - $start_time) s
