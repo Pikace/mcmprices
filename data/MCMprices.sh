@@ -40,7 +40,6 @@ while IFS= read -r urlMCM; do
 	else 
 	  echo "-"
 	fi
-        fi
     done 
 done < ./data/MCMsearchCards.txt
 echo -e "${stringPrices}" 
