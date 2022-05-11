@@ -19,6 +19,7 @@ while IFS= read -r urlMCM; do
        #printf "%s" "$htmlLine" | cat -v
        #echo "################"
 	   #echo $htmlLine
+	   #ATTENTION A LA LANGUE DES DATA !! fr only
         if [[ "$htmlLine" == 'col-xl-5">Tendance' ]]
         then
             isFound=true
@@ -38,6 +39,6 @@ while IFS= read -r urlMCM; do
             fi
         fi
     done 
-done < ./data/MCMsearchCards0.txt
+done < ./data/MCMsearchCards.txt
 echo -e "${stringPrices}" 
 echo "-----END-----" && echo run time is $(expr `date +%s` - $start_time) s
