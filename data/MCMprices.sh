@@ -13,6 +13,7 @@ while IFS= read -r urlMCM; do
     isFound=false
     urlMCM=${urlMCM%$'\r'}
     content=$(curl -L -s $urlMCM)
+    stringPrices = "-"
 	
 	#Parcours le fichier HTML à la recherche de Tendance des prix
     for htmlLine in $content; do
@@ -39,7 +40,6 @@ while IFS= read -r urlMCM; do
             fi
 	fi
     done
-    echo "-"
 done < ./data/MCMsearchCards.txt
 echo -e "${stringPrices}" 
 echo "-----END-----" && echo run time is $(expr `date +%s` - $start_time) s
