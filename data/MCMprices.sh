@@ -38,6 +38,6 @@ while IFS= read -r urlMCM; do
             fi
         fi
     done 
-done < ./data/MCMsearchCards.txt
+done < ./data/MCMsearchCards0.txt
 echo -e "${stringPrices}" 
 echo "-----END-----" && echo run time is $(expr `date +%s` - $start_time) s
