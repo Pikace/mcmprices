@@ -33,7 +33,7 @@ while IFS= read -r urlMCM; do
 	      #echo $urlMCM ":" ${htmlLine#"$searchPrice"}
               price=${htmlLine#"$searchPrice"}
 	      #echo $price >> ./data/$htmlLinename	      
-	      if [ -z "$price"]
+	      if [[ -z "$price"]]
 	      then
 	      	price="-"
 	      fi
