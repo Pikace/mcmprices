@@ -40,7 +40,7 @@ while IFS= read -r urlMCM; do
 	fi
     done
     
-    if [ "$isFound" = false ]
+    if [ "$price" == "" ]
     then
       price="-"
       stringPrices="${stringPrices}${price}\n"
