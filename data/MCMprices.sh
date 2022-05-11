@@ -13,7 +13,7 @@ while IFS= read -r urlMCM; do
     isFound=false
     urlMCM=${urlMCM%$'\r'}
     content=$(curl -L -s $urlMCM)
-    stringPrices="-"
+    price="-"
 	
 	#Parcours le fichier HTML à la recherche de Tendance des prix
     for htmlLine in $content; do
