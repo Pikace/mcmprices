@@ -35,7 +35,7 @@ while IFS= read -r urlMCM; do
 	      #echo $price >> ./data/$htmlLinename	      
 	      if [[ -z "$price"]]
 	      then
-	      	price="-"
+	      	price=0
 	      fi
               stringPrices="${stringPrices}${price}\n"
               isFound=false
