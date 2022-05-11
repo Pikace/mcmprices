@@ -32,7 +32,8 @@ while IFS= read -r urlMCM; do
             then
 	      #echo $urlMCM ":" ${htmlLine#"$searchPrice"}
               price=${htmlLine#"$searchPrice"}
-	      #echo $price >> ./data/$htmlLinename	      
+	      #echo $price >> ./data/$htmlLinename	
+	      echo $price
 	      if [[ -z "$price" ]]
 	      then
 	      	price=0
