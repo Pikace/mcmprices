@@ -32,16 +32,14 @@ while IFS= read -r urlMCM; do
             then
 	      #echo $urlMCM ":" ${htmlLine#"$searchPrice"}
               price=${htmlLine#"$searchPrice"}
-	      #echo $price >> ./data/$htmlLinename	
-	      echo $price
-	      if [[ -z "$price" ]]
-	      then
-	      	price=0
-	      fi
+	      #echo $price >> ./data/$htmlLinename
               stringPrices="${stringPrices}${price}\n"
               isFound=false
 	      break
             fi
+	else 
+	  echo "-"
+	fi
         fi
     done 
 done < ./data/MCMsearchCards.txt
