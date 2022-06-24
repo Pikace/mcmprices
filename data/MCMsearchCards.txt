@@ -9,3 +9,15 @@ http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/History-Pack-1/Metac
 http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Tales-of-Aria-Unlimited/Channel-Lake-Frigid-U-ELE146?sellerReputation=3&language=1,2,7&minCondition=6
 http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Tales-of-Aria-First/Blizzard-ELE147?sellerReputation=3&language=1,2,7&minCondition=6
 http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Everfest-First/Sigil-of-Parapets-Normal?sellerReputation=3&language=1,2,7&minCondition=6
+http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Uprising/Coronet-Peak-Rainbow-Foil
+http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Uprising/Rewind-Alternate-Art-Rainbow-Foil
+http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Uprising/Encase-Regular
+http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Uprising/Hypothermia-Regular
+http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Uprising/That-All-You-Got-Regular
+http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Uprising/Channel-the-Bleak-Expanse-Regular
+http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Uprising/Frost-Hex-Regular
+http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Uprising/Freezing-Point-Regular
+http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Uprising/Insidious-Chill-Regular
+http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Uprising/Rewind-Regular
+http://www.cardmarket.com/fr/FleshAndBlood/Products/Singles/Uprising/Erase-Face-Regular
+
